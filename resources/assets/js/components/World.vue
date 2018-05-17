@@ -6,6 +6,11 @@
 
 <script>
 export default {
-    name: 'world'
+    name: 'world',
+    mounted () {
+        this.$http.get('/api/v1/hello').then(res => {
+            console.log(res.data)
+        })
+    }
 }
 </script>

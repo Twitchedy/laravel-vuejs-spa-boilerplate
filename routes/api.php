@@ -13,5 +13,5 @@ use Illuminate\Http\Request;
  * V1 API
  */
 Route::prefix('v1')->group(function () {
-
+    Route::get('/hello', 'Api\HelloController@hello');
 });
